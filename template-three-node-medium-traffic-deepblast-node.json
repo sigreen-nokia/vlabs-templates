@@ -1,0 +1,34 @@
+{
+    "submitter": "simon.green",
+
+    "ec2": {
+        "region": "us-east-2",
+        "key_name": "simon.green"
+    },
+
+    "docker": {
+        "public_ip": "127.0.0.1",
+        "public_dns_name": "localhost"
+    },
+
+    "features": ["deepblast-flow","medium","replay","sleepy"],
+
+    "replay_dataset": "merit-2020-10",
+    "image": "22.1.0+master.130215-71d0a5362a",
+    "infrastructure": "ec2",
+    "dcus": 3,
+
+    "deploy": {
+        "AWS_ACCESS_KEY_ID": "AKxxxxxxxxxxxxxxxH",
+        "AWS_SECRET_ACCESS_KEY": "N6xxxxxxxxxxxxxxxx+1P"
+    },
+
+    "vlabs": {
+        "GITHUB_USERNAME": "sigreen-nokia",
+        "GITHUB_PASSWORD": "9c3bxxxxxxxxxxxxxxxxxxxxb7d"
+    },
+
+    "ssh_keys": [
+        "ssh-rsa AAAAB3NzaC1ycxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    ]
+}

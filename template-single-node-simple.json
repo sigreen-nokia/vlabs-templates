@@ -1,0 +1,27 @@
+{
+    "submitter": "simon.green",
+
+    "ec2": {
+        "region": "us-east-2",
+        "key_name": "simon.green"
+    },
+
+    "docker": {
+        "public_ip": "127.0.0.1",
+        "public_dns_name": "localhost"
+    },
+
+    "deploy": {
+        "AWS_ACCESS_KEY_ID": "AKIAUxxxxxxxxxxxxxFH",
+        "AWS_SECRET_ACCESS_KEY": "N6xxxxxxxxxxxxxxxxxxXC+1P"
+    },
+
+    "vlabs": {
+        "GITHUB_USERNAME": "sigreen-nokia",
+        "GITHUB_PASSWORD": "9cxxxxxxxxxxxxxxxxxxxxx-f5b7d"
+    },
+
+    "ssh_keys": [
+        "ssh-rsa AAAAB3NzaC1yc2EAAAADAxxxxxxxxxxxxxxxxxxxxx"
+    ]
+}
