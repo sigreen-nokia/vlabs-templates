@@ -18,16 +18,16 @@
     "infrastructure": "ec2",
 
     "deploy": {
-        "AWS_ACCESS_KEY_ID": "AKxxxxxxxxxxxxxFH",
-        "AWS_SECRET_ACCESS_KEY": "N6xxxxxxxxxxxxxxx1P"
+        "AWS_ACCESS_KEY_ID": "xxxxxxxxxxxxx",
+        "AWS_SECRET_ACCESS_KEY": "xxxxxxxxxxxxxxx"
     },
 
     "vlabs": {
-        "GITHUB_USERNAME": "sigreen-nokia",
-        "GITHUB_PASSWORD": "9c3b2-59xxxxxxxxxxxxxxxf-f5b7d"
+        "GITHUB_USERNAME": "xxxxxxx",
+        "GITHUB_PASSWORD": "xxxxxxxxxxxxxxx"
     },
 
     "ssh_keys": [
-        "ssh-rsa AAAxxxxxxxxxxxxxxxxxxxxX"
+        "ssh-rsa xxxxxxxxxxxxxxxxxxxx"
     ]
 }

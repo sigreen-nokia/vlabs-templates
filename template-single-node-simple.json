@@ -12,16 +12,16 @@
     },
 
     "deploy": {
-        "AWS_ACCESS_KEY_ID": "AKIAUxxxxxxxxxxxxxFH",
-        "AWS_SECRET_ACCESS_KEY": "N6xxxxxxxxxxxxxxxxxxXC+1P"
+        "AWS_ACCESS_KEY_ID": "xxxxxxxxxxxx",
+        "AWS_SECRET_ACCESS_KEY": "xxxxxxxxxxxxxxxxxx"
     },
 
     "vlabs": {
-        "GITHUB_USERNAME": "sigreen-nokia",
-        "GITHUB_PASSWORD": "9cxxxxxxxxxxxxxxxxxxxxx-f5b7d"
+        "GITHUB_USERNAME": "xxxxxxxx",
+        "GITHUB_PASSWORD": "xxxxxxxxxxxxxxxxxxxxxxxx"
     },
 
     "ssh_keys": [
-        "ssh-rsa AAAAB3NzaC1yc2EAAAADAxxxxxxxxxxxxxxxxxxxxx"
+        "ssh-rsa xxxxxxxxxxxxxxxxxxx"
     ]
 }
