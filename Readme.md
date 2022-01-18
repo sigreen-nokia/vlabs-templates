@@ -10,7 +10,11 @@ You will need to make the following changes to make them your own.
 4) Github password replace with your GitHub token (not password)  
 5) ssh key, replace with your ssh public key id_rsa.pub  
   
-Then:   
+Deploy:   
   
 ./vlmgr.py create  
+  
+Delete:   
+  
+./vlmgr.py terminate 
   
