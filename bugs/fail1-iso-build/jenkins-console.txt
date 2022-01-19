@@ -1,0 +1,297 @@
+21:49:31 Started by user VLabs NG
+21:49:31 Running as SYSTEM
+21:49:31 [EnvInject] - Loading node environment variables.
+21:49:31 Building remotely on EC2 (VLabs NG Slaves - us-east-2) - vlabs-slave (us-east-2) (i-061c8e74e7b69f877) (vlabs-image vlabs-test vlabs-us-east-2) in workspace /home/ubuntu/workspace/vlabs-create@2
+21:49:31 [ssh-agent] Looking for ssh-agent implementation...
+21:49:31 [ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+21:49:31 $ ssh-agent
+21:49:31 SSH_AUTH_SOCK=/tmp/ssh-ksR6iArJEhJT/agent.16457
+21:49:31 SSH_AGENT_PID=16460
+21:49:31 [ssh-agent] Started.
+21:49:31 Running ssh-add (command line suppressed)
+21:49:31 Identity added: /home/ubuntu/workspace/vlabs-create@2@tmp/private_key_6796943086313072896.key (/home/ubuntu/workspace/vlabs-create@2@tmp/private_key_6796943086313072896.key)
+21:49:31 [ssh-agent] Using credentials vlabs (AWS EC2 key for managing Virtual Labs NG instances)
+21:49:32 The recommended git tool is: NONE
+21:49:32 using credential 1cc1b282-c5c7-4d76-ab1c-05076ac36d2f
+21:49:32  > git rev-parse --resolve-git-dir /home/ubuntu/workspace/vlabs-create@2/.git # timeout=10
+21:49:32 Fetching changes from the remote Git repository
+21:49:32  > git config remote.origin.url https://github.com/deepfield/vlabs.git # timeout=10
+21:49:32 Using shallow fetch with depth 1
+21:49:32 Pruning obsolete local branches
+21:49:32 Fetching upstream changes from https://github.com/deepfield/vlabs.git
+21:49:32  > git --version # timeout=10
+21:49:32  > git --version # 'git version 2.17.1'
+21:49:32 using GIT_ASKPASS to set credentials Read only user for vlabs use
+21:49:32  > git fetch --tags --progress --prune --depth=1 -- https://github.com/deepfield/vlabs.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+21:49:33  > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+21:49:33 Checking out Revision a82974ef230fea02d0d106482e8458ba38d52e80 (refs/remotes/origin/master)
+21:49:33  > git config core.sparsecheckout # timeout=10
+21:49:33  > git checkout -f a82974ef230fea02d0d106482e8458ba38d52e80 # timeout=10
+21:49:33 Commit message: "Release (#903)"
+21:49:33  > git rev-list --no-walk a82974ef230fea02d0d106482e8458ba38d52e80 # timeout=10
+21:49:33 Cleaning workspace
+21:49:33  > git rev-parse --verify HEAD # timeout=10
+21:49:33 Resetting working tree
+21:49:33  > git reset --hard # timeout=10
+21:49:33  > git clean -fdx # timeout=10
+21:49:33 [EnvInject] - Executing scripts and injecting environment variables after the SCM step.
+21:49:33 [EnvInject] - Injecting as environment variables the properties content 
+21:49:33 DF_DBF_WEBSERVICE_IP=10.0.65.134
+21:49:33 
+21:49:33 [EnvInject] - Variables injected successfully.
+21:49:33 [vlabs-create@2] $ /bin/bash /tmp/jenkins11751654242168409970.sh
+21:49:33 + export PYTHONUNBUFFERED=1
+21:49:33 + PYTHONUNBUFFERED=1
+21:49:33 + sudo mkdir -p /home/ubuntu/.cache/pip
+21:49:33 + sudo chmod 777 /home/ubuntu/.cache/pip
+21:49:33 + virtualenv --python=python3 --system-site-packages venv
+21:49:34 Already using interpreter /usr/bin/python3
+21:49:34 Using base prefix '/usr'
+21:49:34 New python executable in /home/ubuntu/workspace/vlabs-create@2/venv/bin/python3
+21:49:34 Also creating executable in /home/ubuntu/workspace/vlabs-create@2/venv/bin/python
+21:49:34 Installing setuptools, pkg_resources, pip, wheel...done.
+21:49:38 + source venv/bin/activate
+21:49:38 ++ deactivate nondestructive
+21:49:38 ++ unset -f pydoc
+21:49:38 ++ '[' -z '' ']'
+21:49:38 ++ '[' -z '' ']'
+21:49:38 ++ '[' -n /bin/bash ']'
+21:49:38 ++ hash -r
+21:49:38 ++ '[' -z '' ']'
+21:49:38 ++ unset VIRTUAL_ENV
+21:49:38 ++ '[' '!' nondestructive = nondestructive ']'
+21:49:38 ++ VIRTUAL_ENV=/home/ubuntu/workspace/vlabs-create@2/venv
+21:49:38 ++ export VIRTUAL_ENV
+21:49:38 ++ _OLD_VIRTUAL_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+21:49:38 ++ PATH=/home/ubuntu/workspace/vlabs-create@2/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+21:49:38 ++ export PATH
+21:49:38 ++ '[' -z '' ']'
+21:49:38 ++ '[' -z '' ']'
+21:49:38 ++ _OLD_VIRTUAL_PS1=
+21:49:38 ++ '[' x '!=' x ']'
+21:49:38 +++ basename /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:38 ++ PS1='(venv) '
+21:49:38 ++ export PS1
+21:49:38 ++ alias pydoc
+21:49:38 ++ '[' -n /bin/bash ']'
+21:49:38 ++ hash -r
+21:49:38 + export DF_NC_WEBSERVICE_IP=nc-broker-priv.deepfield.net
+21:49:38 + DF_NC_WEBSERVICE_IP=nc-broker-priv.deepfield.net
+21:49:38 + '[' vlabs == dev ']'
+21:49:38 + pip install -r requirements.txt
+21:49:39 Requirement already satisfied: boto>=2.48.0 in /usr/local/lib/python3.6/dist-packages (from -r requirements.txt (line 1)) (2.49.0)
+21:49:39 Collecting boto3==1.20.23
+21:49:39   Downloading boto3-1.20.23-py3-none-any.whl (131 kB)
+21:49:40 Collecting botocore==1.23.23
+21:49:40   Downloading botocore-1.23.23-py3-none-any.whl (8.4 MB)
+21:49:41 Collecting cryptography==3.3.2
+21:49:41   Downloading cryptography-3.3.2-cp36-abi3-manylinux2010_x86_64.whl (2.6 MB)
+21:49:41 Requirement already satisfied: docker==2.0.0 in /usr/local/lib/python3.6/dist-packages (from -r requirements.txt (line 5)) (2.0.0)
+21:49:41 Collecting ncclient==0.6.9
+21:49:41   Downloading ncclient-0.6.9.tar.gz (118 kB)
+21:49:41   Preparing metadata (setup.py): started
+21:49:42   Preparing metadata (setup.py): finished with status 'done'
+21:49:42 Collecting paramiko==2.7.2
+21:49:42   Downloading paramiko-2.7.2-py2.py3-none-any.whl (206 kB)
+21:49:42 Collecting pygithub==1.54.1
+21:49:42   Downloading PyGithub-1.54.1-py3-none-any.whl (289 kB)
+21:49:42 Collecting pyopenssl==19.1.0
+21:49:42   Downloading pyOpenSSL-19.1.0-py2.py3-none-any.whl (53 kB)
+21:49:42 Collecting pytest==6.2.1
+21:49:42   Downloading pytest-6.2.1-py3-none-any.whl (279 kB)
+21:49:42 Collecting pyyaml==6.0
+21:49:42   Downloading PyYAML-6.0-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (603 kB)
+21:49:42 Collecting requests==2.26.0
+21:49:42   Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+21:49:42 Collecting urllib3==1.26.7
+21:49:42   Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+21:49:42 Collecting kubernetes==20.13.0
+21:49:42   Downloading kubernetes-20.13.0-py2.py3-none-any.whl (1.8 MB)
+21:49:42 Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in /usr/local/lib/python3.6/dist-packages (from boto3==1.20.23->-r requirements.txt (line 2)) (0.9.4)
+21:49:43 Collecting s3transfer<0.6.0,>=0.5.0
+21:49:43   Downloading s3transfer-0.5.0-py3-none-any.whl (79 kB)
+21:49:43 Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /usr/local/lib/python3.6/dist-packages (from botocore==1.23.23->-r requirements.txt (line 3)) (2.8.1)
+21:49:43 Requirement already satisfied: six>=1.4.1 in /usr/lib/python3/dist-packages (from cryptography==3.3.2->-r requirements.txt (line 4)) (1.11.0)
+21:49:43 Requirement already satisfied: cffi>=1.12 in /usr/local/lib/python3.6/dist-packages (from cryptography==3.3.2->-r requirements.txt (line 4)) (1.13.2)
+21:49:43 Requirement already satisfied: websocket-client>=0.32.0 in /usr/local/lib/python3.6/dist-packages (from docker==2.0.0->-r requirements.txt (line 5)) (0.54.0)
+21:49:43 Requirement already satisfied: docker-pycreds>=0.2.1 in /usr/local/lib/python3.6/dist-packages (from docker==2.0.0->-r requirements.txt (line 5)) (0.4.0)
+21:49:43 Requirement already satisfied: setuptools>0.6 in ./venv/lib/python3.6/site-packages (from ncclient==0.6.9->-r requirements.txt (line 6)) (59.6.0)
+21:49:43 Requirement already satisfied: lxml>=3.3.0 in /usr/local/lib/python3.6/dist-packages (from ncclient==0.6.9->-r requirements.txt (line 6)) (4.4.2)
+21:49:43 Requirement already satisfied: bcrypt>=3.1.3 in /usr/local/lib/python3.6/dist-packages (from paramiko==2.7.2->-r requirements.txt (line 7)) (3.1.7)
+21:49:43 Requirement already satisfied: pynacl>=1.0.1 in /usr/local/lib/python3.6/dist-packages (from paramiko==2.7.2->-r requirements.txt (line 7)) (1.3.0)
+21:49:43 Requirement already satisfied: deprecated in /usr/local/lib/python3.6/dist-packages (from pygithub==1.54.1->-r requirements.txt (line 8)) (1.2.7)
+21:49:43 Requirement already satisfied: pyjwt<2.0 in /usr/lib/python3/dist-packages (from pygithub==1.54.1->-r requirements.txt (line 8)) (1.5.3)
+21:49:43 Collecting toml
+21:49:43   Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+21:49:43 Requirement already satisfied: pluggy<1.0.0a1,>=0.12 in /usr/local/lib/python3.6/dist-packages (from pytest==6.2.1->-r requirements.txt (line 10)) (0.13.1)
+21:49:43 Collecting iniconfig
+21:49:43   Downloading iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+21:49:43 Requirement already satisfied: importlib-metadata>=0.12 in /usr/local/lib/python3.6/dist-packages (from pytest==6.2.1->-r requirements.txt (line 10)) (1.4.0)
+21:49:43 Requirement already satisfied: packaging in /usr/local/lib/python3.6/dist-packages (from pytest==6.2.1->-r requirements.txt (line 10)) (20.0)
+21:49:43 Collecting py>=1.8.2
+21:49:43   Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+21:49:43 Collecting attrs>=19.2.0
+21:49:43   Downloading attrs-21.4.0-py2.py3-none-any.whl (60 kB)
+21:49:43 Collecting charset-normalizer~=2.0.0
+21:49:43   Downloading charset_normalizer-2.0.10-py3-none-any.whl (39 kB)
+21:49:43 Requirement already satisfied: idna<4,>=2.5 in /usr/lib/python3/dist-packages (from requests==2.26.0->-r requirements.txt (line 12)) (2.6)
+21:49:43 Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests==2.26.0->-r requirements.txt (line 12)) (2018.1.18)
+21:49:43 Collecting requests-oauthlib
+21:49:43   Downloading requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)
+21:49:43 Collecting google-auth>=1.0.1
+21:49:43   Downloading google_auth-2.3.3-py2.py3-none-any.whl (155 kB)
+21:49:44 Requirement already satisfied: pycparser in /usr/local/lib/python3.6/dist-packages (from cffi>=1.12->cryptography==3.3.2->-r requirements.txt (line 4)) (2.19)
+21:49:44 Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/lib/python3/dist-packages (from google-auth>=1.0.1->kubernetes==20.13.0->-r requirements.txt (line 14)) (0.2.1)
+21:49:44 Collecting cachetools<5.0,>=2.0.0
+21:49:44   Downloading cachetools-4.2.4-py3-none-any.whl (10 kB)
+21:49:44 Requirement already satisfied: rsa<5,>=3.1.4 in /usr/local/lib/python3.6/dist-packages (from google-auth>=1.0.1->kubernetes==20.13.0->-r requirements.txt (line 14)) (3.4.2)
+21:49:44 Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.6/dist-packages (from importlib-metadata>=0.12->pytest==6.2.1->-r requirements.txt (line 10)) (1.0.0)
+21:49:44 Requirement already satisfied: wrapt<2,>=1.10 in /usr/local/lib/python3.6/dist-packages (from deprecated->pygithub==1.54.1->-r requirements.txt (line 8)) (1.11.2)
+21:49:44 Requirement already satisfied: pyparsing>=2.0.2 in /usr/local/lib/python3.6/dist-packages (from packaging->pytest==6.2.1->-r requirements.txt (line 10)) (2.4.6)
+21:49:44 Collecting oauthlib>=3.0.0
+21:49:44   Downloading oauthlib-3.1.1-py2.py3-none-any.whl (146 kB)
+21:49:44 Requirement already satisfied: pyasn1>=0.1.3 in /usr/lib/python3/dist-packages (from rsa<5,>=3.1.4->google-auth>=1.0.1->kubernetes==20.13.0->-r requirements.txt (line 14)) (0.4.2)
+21:49:44 Requirement already satisfied: more-itertools in /usr/local/lib/python3.6/dist-packages (from zipp>=0.5->importlib-metadata>=0.12->pytest==6.2.1->-r requirements.txt (line 10)) (8.1.0)
+21:49:44 Building wheels for collected packages: ncclient
+21:49:44   WARNING: Building wheel for ncclient failed: [Errno 13] Permission denied: '/home/ubuntu/.cache/pip/wheels/66'
+21:49:44 Failed to build ncclient
+21:49:45 Installing collected packages: urllib3, charset-normalizer, requests, oauthlib, cryptography, cachetools, botocore, toml, s3transfer, requests-oauthlib, pyyaml, py, paramiko, iniconfig, google-auth, attrs, pytest, pyopenssl, pygithub, ncclient, kubernetes, boto3
+21:49:45   Attempting uninstall: urllib3
+21:49:45     Found existing installation: urllib3 1.25.3
+21:49:45     Not uninstalling urllib3 at /usr/local/lib/python3.6/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:45     Can't uninstall 'urllib3'. No files were found to uninstall.
+21:49:45   Attempting uninstall: requests
+21:49:45     Found existing installation: requests 2.22.0
+21:49:45     Not uninstalling requests at /usr/local/lib/python3.6/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:45     Can't uninstall 'requests'. No files were found to uninstall.
+21:49:45   Attempting uninstall: oauthlib
+21:49:45     Found existing installation: oauthlib 2.0.6
+21:49:45     Not uninstalling oauthlib at /usr/lib/python3/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:45     Can't uninstall 'oauthlib'. No files were found to uninstall.
+21:49:45   Attempting uninstall: cryptography
+21:49:45     Found existing installation: cryptography 2.4.2
+21:49:45     Not uninstalling cryptography at /usr/local/lib/python3.6/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:45     Can't uninstall 'cryptography'. No files were found to uninstall.
+21:49:45   Attempting uninstall: botocore
+21:49:45     Found existing installation: botocore 1.14.3
+21:49:45     Not uninstalling botocore at /usr/local/lib/python3.6/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:45     Can't uninstall 'botocore'. No files were found to uninstall.
+21:49:46   Attempting uninstall: s3transfer
+21:49:46     Found existing installation: s3transfer 0.3.0
+21:49:46     Not uninstalling s3transfer at /usr/local/lib/python3.6/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:46     Can't uninstall 's3transfer'. No files were found to uninstall.
+21:49:46   Attempting uninstall: pyyaml
+21:49:46     Found existing installation: PyYAML 3.12
+21:49:46     Not uninstalling pyyaml at /usr/lib/python3/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:46     Can't uninstall 'PyYAML'. No files were found to uninstall.
+21:49:46   Attempting uninstall: py
+21:49:46     Found existing installation: py 1.8.1
+21:49:46     Not uninstalling py at /usr/local/lib/python3.6/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:46     Can't uninstall 'py'. No files were found to uninstall.
+21:49:46   Attempting uninstall: paramiko
+21:49:46     Found existing installation: paramiko 2.4.2
+21:49:46     Not uninstalling paramiko at /usr/local/lib/python3.6/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:46     Can't uninstall 'paramiko'. No files were found to uninstall.
+21:49:46   Attempting uninstall: attrs
+21:49:46     Found existing installation: attrs 17.4.0
+21:49:46     Not uninstalling attrs at /usr/lib/python3/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:46     Can't uninstall 'attrs'. No files were found to uninstall.
+21:49:46   Attempting uninstall: pytest
+21:49:46     Found existing installation: pytest 5.3.2
+21:49:46     Not uninstalling pytest at /usr/local/lib/python3.6/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:46     Can't uninstall 'pytest'. No files were found to uninstall.
+21:49:46   Attempting uninstall: pyopenssl
+21:49:46     Found existing installation: pyOpenSSL 17.5.0
+21:49:46     Not uninstalling pyopenssl at /usr/lib/python3/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:46     Can't uninstall 'pyOpenSSL'. No files were found to uninstall.
+21:49:47   Attempting uninstall: pygithub
+21:49:47     Found existing installation: PyGithub 1.43.8
+21:49:47     Not uninstalling pygithub at /usr/local/lib/python3.6/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:47     Can't uninstall 'PyGithub'. No files were found to uninstall.
+21:49:47   Attempting uninstall: ncclient
+21:49:47     Found existing installation: ncclient 0.6.7
+21:49:47     Not uninstalling ncclient at /usr/local/lib/python3.6/dist-packages, outside environment /home/ubuntu/workspace/vlabs-create@2/venv
+21:49:47     Can't uninstall 'ncclient'. No files were found to uninstall.
+21:49:47     Running setup.py install for ncclient: started
+21:49:47     Running setup.py install for ncclient: finished with status 'done'
+21:49:47   DEPRECATION: ncclient was installed using the legacy 'setup.py install' method, because a wheel could not be built for it. A possible replacement is to fix the wheel build issue reported above. Discussion can be found at https://github.com/pypa/pip/issues/8368
+21:49:49 ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+21:49:49 awscli 1.17.3 requires botocore==1.14.3, but you have botocore 1.23.23 which is incompatible.
+21:49:49 awscli 1.17.3 requires PyYAML<5.3,>=3.10, but you have pyyaml 6.0 which is incompatible.
+21:49:49 awscli 1.17.3 requires s3transfer<0.4.0,>=0.3.0, but you have s3transfer 0.5.0 which is incompatible.
+21:49:49 Successfully installed attrs-21.4.0 boto3-1.20.23 botocore-1.23.23 cachetools-4.2.4 charset-normalizer-2.0.10 cryptography-3.3.2 google-auth-2.3.3 iniconfig-1.1.1 kubernetes-20.13.0 ncclient-0.6.9 oauthlib-3.1.1 paramiko-2.7.2 py-1.11.0 pygithub-1.54.1 pyopenssl-19.1.0 pytest-6.2.1 pyyaml-6.0 requests-2.26.0 requests-oauthlib-1.3.0 s3transfer-0.5.0 toml-0.10.2 urllib3-1.26.7
+21:49:49 + ./vlmgr.py --ec2-key-name=vlabs --private --download-logs create
+21:49:50 Creating cluster...
+21:51:54 Downloading ISO to KVM host 's3://download.deepfield.net/ISO/deepfield-p5.1.28-s5.1.22-bionic.iso'...
+21:52:26 Defining KVM networks...
+21:52:26 Creating DCU VMs from ISO...
+22:06:54 Establishing SSH connections to DCUs with user support...
+22:06:58 Secsh channel 4 open FAILED: No route to host: Connect failed
+22:07:11 Writing cluster configuration to vlab.json ...
+22:07:11 Deployment information:
+22:07:11 	affectionate-bassi - @simon.green; 1 x86_64 DCU(s) @ ec2/us-east-2 - preparing
+22:07:11 	UUID: 775b6e59-dbfd-4825-8b63-24dfaf8adcf9
+22:07:11 	Features: deploy, medium, sleepy
+22:07:11 	ssh -A -J ubuntu@affectionate-bassi-vlabs.deepfield.net support@192.168.122.126
+22:07:11 	UI: https://affectionate-bassi-vlabs.deepfield.net/
+22:07:11 	Expiration: 2022-01-20T01:50:00Z
+22:07:11 	Cost per hour: ($4.91/h)
+22:07:11 Versions:
+22:07:11 	Base: 5.1
+22:07:11 	ISO: p5.1.28-s5.1.22
+22:07:11 	Distribution: Ubuntu 18
+22:07:11 Establishing SSH connections to DCUs with user support...
+22:07:12 Skipping install of Linux packages, ISO based install should have all necessary packages pre-installed
+22:07:12 Skipping configure swap, ISO based install
+22:07:12 Installing dependencies...
+22:08:24 Configuring DCUs...
+22:08:24 Creating deploy configuration...
+22:08:24 Traceback (most recent call last):
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/procedure/procedure_base.py", line 33, in start
+22:08:24     self.run()
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/procedure/procedure_create.py", line 154, in run
+22:08:24     ProcedureDeploy(sessions, self.conf).start()
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/procedure/procedure_base.py", line 33, in start
+22:08:24     self.run()
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/procedure/procedure_deploy.py", line 328, in run
+22:08:24     existing_config_yaml = session.get_yaml("/pipedream/provision/config.yaml")
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/session/session_ssh_base.py", line 59, in get_yaml
+22:08:24     data = yaml.load(s)
+22:08:24 TypeError: load() missing 1 required positional argument: 'Loader'
+22:08:24 
+22:08:24 Traceback (most recent call last):
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/procedure/procedure_base.py", line 61, in __run_worker
+22:08:24     func(session, i)
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/procedure/procedure_bootstrap.py", line 22, in _bootstrap_deployment
+22:08:24     ProcedureCreate(None, self.conf).start()
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/procedure/procedure_base.py", line 33, in start
+22:08:24     self.run()
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/procedure/procedure_create.py", line 154, in run
+22:08:24     ProcedureDeploy(sessions, self.conf).start()
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/procedure/procedure_base.py", line 33, in start
+22:08:24     self.run()
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/procedure/procedure_deploy.py", line 328, in run
+22:08:24     existing_config_yaml = session.get_yaml("/pipedream/provision/config.yaml")
+22:08:24   File "/home/ubuntu/workspace/vlabs-create@2/vlabs/session/session_ssh_base.py", line 59, in get_yaml
+22:08:24     data = yaml.load(s)
+22:08:24 TypeError: load() missing 1 required positional argument: 'Loader'
+22:08:24 
+22:08:24 ERROR: Unhandled exception. Parallel execution of procedure Bootstrap failed for <bound method ProcedureBootstrap._bootstrap_deployment of <vlabs.procedure.procedure_bootstrap.ProcedureBootstrap object at 0x7f1db4fc39e8>>.
+22:08:24 Terminating cluster...
+22:08:24 Establishing SSH connections to DCUs with user support...
+22:08:25 Downloading logs...
+22:08:25 Failed to download logs: Command failed with exit code 1. cp: cannot stat '/var/log/supervisor/*': No such file or directory
+22:08:34 ERROR: Parallel execution of procedure Bootstrap failed for <bound method ProcedureBootstrap._bootstrap_deployment of <vlabs.procedure.procedure_bootstrap.ProcedureBootstrap object at 0x7f1db4fc39e8>>.
+22:08:34 Build step 'Execute shell' marked build as failure
+22:08:34 $ ssh-agent -k
+22:08:34 unset SSH_AUTH_SOCK;
+22:08:34 unset SSH_AGENT_PID;
+22:08:34 echo Agent pid 16460 killed;
+22:08:34 [ssh-agent] Stopped.
+22:08:34 Archiving artifacts
+22:08:34 [InfluxDB Plugin] Collecting data...
+22:08:34 [InfluxDB Plugin] Publishing data to target 'monitoring' (url='https://monitoring.deepfield.net', database='jenkins')
+22:08:34 [InfluxDB Plugin] Completed.
+22:08:34 [Slack Notifications] found #21826 as previous completed, non-aborted build
+22:08:34 [Slack Notifications] will send OnEveryFailureNotification because build matches and user preferences allow it
+22:08:34 Finished: FAILURE

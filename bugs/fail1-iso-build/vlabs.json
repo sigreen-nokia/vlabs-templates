@@ -1,0 +1,97 @@
+{
+    "debug": false,
+    "namespace": "vlabs",
+    "uuid": "83e3a435-0ab0-48d0-ac1e-06d6e43cc79b",
+    "id": "nostalgic-mayer",
+    "submitter": "christina.seely",
+    "features": [
+        "dev",
+        "oi",
+        "servi",
+        "sleepy",
+        "subi",
+        "asneval",
+        "network-firewall",
+        "local-monitoring",
+        "medium",
+        "replay"
+    ],
+    "permission": 200,
+    "script": "",
+    "replay_dataset": "merit-2020-10",
+    "dcus": 1,
+    "arch": "x86_64",
+    "dist": "Ubuntu",
+    "dist_rel": 18,
+    "base_rev": "5.0",
+    "pipedream_rev": null,
+    "pipedream_rev_is_branch": false,
+    "systems_rev": null,
+    "systems_rev_is_branch": false,
+    "deploy_rev": null,
+    "deploy": {
+        "build_type": "pkg",
+        "manage_iptables": false
+    },
+    "iso": null,
+    "influxdb_username": "vlabs",
+    "local_influxdb_password": "deepfield",
+    "image": "5.0.46",
+    "infrastructure": "ec2",
+    "net_infrastructure": "composite",
+    "ec2": {
+        "region": "us-east-2",
+        "regions": [
+            "us-east-2",
+            "ap-southeast-2",
+            "eu-west-3"
+        ],
+        "key_name": "vlabs",
+        "instance_type": "m5.12xlarge",
+        "subnet_id": "subnet-0ebd170b6ce881296",
+        "security_group_ids": [
+            "sg-0e7cef4f00eaa9767"
+        ],
+        "ami_id": null,
+        "user_data": null,
+        "sda_size": 2000,
+        "snapshot_id": null
+    },
+    "timeout": 4.0,
+    "vlabs": {
+        "parallel": null,
+        "private": true,
+        "download_logs": true,
+        "git_name": "Christina Seely",
+        "git_email": "christina.seely@nokia.com",
+        "dcus": [
+            {
+                "id": "i-0bb070c046466a751",
+                "state": "running",
+                "type": "dcu",
+                "hostname": "master",
+                "minion_id": "nostalgic-mayer-master",
+                "private_ip": "10.0.0.170",
+                "private_ssh_port": 22,
+                "private_http_port": 443,
+                "public_ip": "3.130.227.65",
+                "public_ssh_port": 22,
+                "public_http_port": 443,
+                "public_dns_name": "ec2-3-130-227-65.us-east-2.compute.amazonaws.com",
+                "uuid": "1fe07682-8a83-4491-a7de-648ea191f49c",
+                "created": "2022-01-19T21:32:57.000Z",
+                "expiration": "2022-01-20T01:33:00Z"
+            }
+        ],
+        "uuid": "83e3a435-0ab0-48d0-ac1e-06d6e43cc79b",
+        "nc_webservice_ip": "nc-broker-priv.deepfield.net",
+        "dbf_webservice_ip": "10.0.65.134",
+        "kvm_instances": [],
+        "instances": [],
+        "region": "us-east-2",
+        "public_dns_name": "nostalgic-mayer-vlabs.deepfield.net"
+    },
+    "ssh_keys": [],
+    "status": "preparing",
+    "expiration": "2022-01-20T01:33:00Z"
+}
