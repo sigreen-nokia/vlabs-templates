@@ -19,7 +19,6 @@ syslog??
 supervisor??.tar.gz
 
 *.http
-template*.*
 vlmgr.json
 vlmgr.json.bak 
 vlab.json

@@ -1,0 +1,27 @@
+{
+    "submitter": "[SUBMITTER]",
+
+    "ec2": {
+        "region": "us-east-2",
+        "key_name": "[AWS_KEY_NAME]"
+    },
+
+    "docker": {
+        "public_ip": "127.0.0.1",
+        "public_dns_name": "localhost"
+    },
+
+    "deploy": {
+        "AWS_ACCESS_KEY_ID": "[AWS_ACCESS_KEY_ID]",
+        "AWS_SECRET_ACCESS_KEY": "[AWS_SECRET_ACCESS_KEY]"
+    },
+    "image": "22.1.0+master.130215-71d0a5362a",
+    "vlabs": {
+        "GITHUB_USERNAME": "[GITHUB_USERNAME]",
+        "GITHUB_PASSWORD": "[GITHUB_PASSWORD]"
+    },
+
+    "ssh_keys": [
+        "[SSH_KEY]"
+    ]
+}
