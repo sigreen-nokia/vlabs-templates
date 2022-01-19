@@ -1,0 +1,7 @@
+export AWS_ACCESS_KEY_ID="xxxxxx"
+export AWS_SECRET_ACCESS_KEY="xxxxxx"
+export AWS_DEFAULT_REGION="us-east-2"
+export GITHUB_USERNAME="sigreen-nokia"
+export GITHUB_PASSWORD="xxxxxx"
+export SUBMITTER="simon.green"
+export AWS_KEY_NAME="simon.green"
