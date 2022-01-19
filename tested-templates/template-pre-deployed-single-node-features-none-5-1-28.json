@@ -15,7 +15,7 @@
         "AWS_ACCESS_KEY_ID": "[AWS_ACCESS_KEY_ID]",
         "AWS_SECRET_ACCESS_KEY": "[AWS_SECRET_ACCESS_KEY]"
     },
-    "image": "22.1.0+master.130215-71d0a5362a",
+    "image": "22.1.0+master.190225-573d601cff",
     "vlabs": {
         "GITHUB_USERNAME": "[GITHUB_USERNAME]",
         "GITHUB_PASSWORD": "[GITHUB_PASSWORD]"

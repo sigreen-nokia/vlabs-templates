@@ -11,10 +11,10 @@
         "public_dns_name": "localhost"
     },
 
-    "features": ["deepblast-flow","medium","replay","sleepy"],
+    "features": ["deepblast-flow","medium","replay"],
 
     "replay_dataset": "merit-2020-10",
-    "image": "22.1.0+master.130215-71d0a5362a",
+    "image": "22.1.0+master.190225-573d601cff",
     "infrastructure": "ec2",
 
     "deploy": {
