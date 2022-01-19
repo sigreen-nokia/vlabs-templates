@@ -1,9 +1,9 @@
 {
-    "submitter": "simon.green",
+    "submitter": "[SUBMITTER]",
 
     "ec2": {
         "region": "us-east-2",
-        "key_name": "simon.green"
+        "key_name": "[AWS_KEY_NAME]"
     },
 
     "docker": {
@@ -19,16 +19,16 @@
     "dcus": 3,
 
     "deploy": {
-        "AWS_ACCESS_KEY_ID": "xxxxxxxxxxxxxxx",
-        "AWS_SECRET_ACCESS_KEY": "xxxxxxxxxxxxxxxx"
+        "AWS_ACCESS_KEY_ID": "[AWS_ACCESS_KEY_ID]",
+        "AWS_SECRET_ACCESS_KEY": "[AWS_SECRET_ACCESS_KEY]"
     },
 
     "vlabs": {
-        "GITHUB_USERNAME": "xxxxxxxxx",
-        "GITHUB_PASSWORD": "xxxxxxxxxxxxxxxxxxxx"
+        "GITHUB_USERNAME": "[GITHUB_USERNAME]",
+        "GITHUB_PASSWORD": "[GITHUB_PASSWORD]"
     },
 
     "ssh_keys": [
-        "ssh-rsa xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        "[SSH_KEY]"
     ]
 }

@@ -3,7 +3,7 @@
     "namespace": "vlabs",
     "uuid": "12559f68-0383-4a29-b64c-647d5a767861",
     "id": "xenodochial-hopper",
-    "submitter": "dennis.hopp",
+    "submitter": "[SUBMITTER]",
     "features": [
         "dev",
         "oi",
@@ -44,7 +44,7 @@
             "ap-southeast-2",
             "eu-west-3"
         ],
-        "key_name": "vlabs",
+        "key_name": "[AWS_KEY_NAME]",
         "instance_type": "m5.16xlarge",
         "subnet_id": "subnet-0a9fcc3e9493f5cb2",
         "security_group_ids": [
